@@ -3,10 +3,23 @@ body {background-image: url(IntroBackground.png); background-size: cover;}
 #TvScreen {
     background: transparent;
     border: none; 
-    cursor: pointer; 
     padding: 0; 
     outline: none;
     position: relative;
     top: 350px; 
     left: 620px; 
+}
+
+#thought {
+  display: none;
+  position: absolute;
+  left: 1000px;
+  top: 450px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 12px;
+  width: 180px;
+  z-index: 3;
+  pointer-events: none;
 }
