@@ -1,8 +1,7 @@
 // IntroPage Start
-$("#answer").hide();
 $("#continue").hide()
-$("#CoverScreen").hide();
-$("#MidPage").hide();
+$(".CoverScreen").hide();
+$(".MidPage").hide();
 
 $("#TvScreen").hover(
   function () {
@@ -14,26 +13,27 @@ $("#TvScreen").hover(
 );
 
 $("#TvScreen").click(function(){
-    $("body").css("background-image", 'url(');
     $("#thought").hide();
     $("#TvScreen").hide();
-    $("#answer").show();
     $("#continue").show();
-    $("#CoverScreen").show();
-    $("#answer").html("Your objective is to choose a door to go through. Each door will lead to an different path so choose wisely.")
-});
+    $(".CoverScreen").show();
 // IntroPage End
+});
 
 // MidPage Start
 $("#continue").click(function(){
     // MidPage Background Replacement
     $("body").css("background-image", 'url(MidSection1.png');
-    $("#MidPage").show();
+    $(".MidPage").show();
     // Hide the previous Instruction Screen
-    $("#answer").hide();
     $("#continue").hide();
-    $("#CoverScreen").hide();
+    $(".CoverScreen").hide();
     // Instruction Screen End
+    // MidPage1 Clickers
+    $("#LeftImg").click(function() {
+      $("#TvScreen").show();
+    });
+    $("#RightImg").click(function() {});
 });
 
 

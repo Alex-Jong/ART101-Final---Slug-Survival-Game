@@ -6,8 +6,8 @@ body {background-image: url(IntroBackground.png); background-size: cover;}
     padding: 0; 
     outline: none;
     position: relative;
-    top: 350px; 
-    left: 620px; 
+    top: 290px; 
+    left: 575px; 
 }
 
 #thought {
@@ -22,4 +22,40 @@ body {background-image: url(IntroBackground.png); background-size: cover;}
   width: 180px;
   z-index: 3;
   pointer-events: none;
+}
+
+.CoverScreen{
+  width: 600px;
+  margin: auto;
+}
+
+.CoverScreen img {
+  width: 600px;
+  height: auto;
+}
+
+#continue {
+  text-align: center;
+  height: 20px;
+  width: 100%;
+}
+
+#LeftImg {
+    background: transparent;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: 400px; 
+    left: 700px; 
+}
+
+#RightImg {
+    background: transparent;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: 450px; 
+    left: 830px; 
 }
