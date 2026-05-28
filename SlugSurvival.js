@@ -64,7 +64,7 @@ $("#continue").click(function () {
           $("body").css("background-image", 'url(Backrooms.png');
           $(".barrelAsk").show();
           $(".barrel").hide();
-          $("#RoomAnswer").html("You gaze upon the unfamiliar place in awe. But awe turns to shock and despair as you turn around and see the door you went through dissapear trapping you forever...");
+          $("#RoomAnswer").html("You gaze upon the unfamiliar place in awe. But awe turns to shock and despair as you turn around and see the door you went through disappear trapping you forever...");
           $("#RoomBack").click(function () {
             $("body").css("background-image", 'url(MidSection1.png');
             $(".barrelAsk").hide();
