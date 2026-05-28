@@ -59,3 +59,75 @@ body {background-image: url(IntroBackground.png); background-size: cover;}
     top: 450px; 
     left: 830px; 
 }
+
+#LakeLeftImg {
+    background: transparent;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: 320px; 
+    left: 0px; 
+}
+
+#LakeRightImg {
+    background: transparent;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: 320px; 
+    left: 220px; 
+}
+
+#ForestLeftImg {
+    background: transparent;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: 450px; 
+    left: 450px; 
+}
+
+#ForestRightImg {
+    background: transparent;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: 450px; 
+    left: 700px; 
+}
+
+.cat{
+  width: 600px;
+  margin: auto;
+}
+
+.cat img {
+  width: 600px;
+  height: auto;
+}
+
+#catAnswer {
+  text-align: center;
+  height: auto;
+  width: auto;
+  background-color: white;
+  outline: 2px solid black;
+}
+
+#catTitle {
+  text-align: center;
+  height: auto;
+  width: auto;
+  background-color: white;
+  outline: 2px solid black;
+}
+
+#catBack {
+  text-align: center;
+  height: 20px;
+  width: 100%;
+}
