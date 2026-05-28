@@ -30,9 +30,7 @@ $("#continue").click(function(){
     $(".CoverScreen").hide();
     // Instruction Screen End
     // MidPage1 Clickers
-    $("#LeftImg").click(function() {
-      $("#TvScreen").show();
-    });
+    $("#LeftImg").click(function() {});
     $("#RightImg").click(function() {});
 });
 
