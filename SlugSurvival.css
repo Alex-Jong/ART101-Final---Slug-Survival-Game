@@ -1,4 +1,13 @@
-body {background-image: url(IntroBackground.png); background-size: cover;}
+body {background-color: black; background-image: url(IntroBackground.png); background-size: cover;}
+
+#noshow {
+  display: none
+}
+
+/*#img1{
+  background-image:;
+  opacity: 0;
+}*/
 
 #TvScreen {
     background: transparent;

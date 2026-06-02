@@ -31,6 +31,7 @@ $("#TvScreen").click(function () {
 $("#continue").click(function () {
   // MidPage Background Replacement
   $("body").css("background-image", 'url(MidSection1.png');
+  //$(#img1).css("opacity", )
   $(".MidPage").show();
   // Hide the previous Instruction Screen
   $("#continue").hide();
