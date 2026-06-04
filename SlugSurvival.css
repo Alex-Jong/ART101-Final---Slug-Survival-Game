@@ -115,16 +115,19 @@ body {background-color: black; background-image: url(IntroBackground.png); backg
 }
 
 .cat img {
-  width: 600px;
-  height: auto;
+  width: 200px;
 }
 
 #catAnswer {
+  position: relative; 
+  background-color: black; 
+  padding: 50px; 
+  border: 6px solid white;
+  border-radius: 15px; 
+  color: white;
+  width: 1000px;
+  left: -250px;
   text-align: center;
-  height: auto;
-  width: auto;
-  background-color: white;
-  outline: 2px solid black;
 }
 
 #catTitle {
@@ -133,12 +136,6 @@ body {background-color: black; background-image: url(IntroBackground.png); backg
   width: auto;
   background-color: white;
   outline: 2px solid black;
-}
-
-#catBack {
-  text-align: center;
-  height: 20px;
-  width: 100%;
 }
 
 #BarrelDoor {
@@ -211,4 +208,24 @@ body {background-color: black; background-image: url(IntroBackground.png); backg
     position: relative;
     top: 550px; 
     left: 800px; 
+}
+
+#Slug {
+  background: transparent;
+  border: none; 
+  padding: 0; 
+  outline: none;
+  position: relative;
+  top: 200px; 
+  left: 600px; 
+}
+
+#CatPortrait {
+  background: transparent;
+  border: none; 
+  padding: 0; 
+  outline: none;
+  position: relative;
+  top: 0px; 
+  left: -200px; 
 }

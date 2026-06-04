@@ -52,38 +52,60 @@ $("#continue").click(function () {
       $(".forest").hide();
       $(".barrel").show();
     });
+  });
 
-    $("#BarrelDoor").click(function () {
-      ask();
-    });
+  $("#BarrelDoor").click(function () {
+    ask();
+  });
 
-    function ask() {
-        
-        let user = prompt("Are you sure you want to enter? [Y/N]");
+  function ask() {
 
-        if (user == "Y") {
-          $("body").css("background-image", 'url(Backrooms.png');
-          $(".barrelAsk").show();
-          $(".barrel").hide();
-          $("#RoomAnswer").html("You gaze upon the unfamiliar place in awe. But awe turns to shock and despair as you turn around and see the door you went through disappear trapping you forever...");
-          $("#RoomBack").click(function () {
-            $("body").css("background-image", 'url(MidSection1.png');
-            $(".barrelAsk").hide();
-            $(".MidPage").show();
-          });
-        }
-      }
+    let user = prompt("Are you sure you want to enter? [Y/N]");
 
-    $("#ForestRightImg").click(function () {
-      $("body").css("background-image", 'url(cats.png');
-      $(".forest").hide();
-      $(".cat").show();
-      $("#catAnswer").html("You feel a sudden surge of gravity, in an instant your body contorts into a grotesque form. You, in an attempt at desperation attempt to cry out for help. Meow! meow?? Herein lies your soul eternally in rest in the gentle embrace of the Cat's Cradle");
-      
-      $("#catBack").click(function () {
+    if (user == "Y") {
+      $("body").css("background-image", 'url(Backrooms.png');
+      $(".barrelAsk").show();
+      $(".barrel").hide();
+      $("#RoomAnswer").html("You gaze upon the unfamiliar place in awe. But awe turns to shock and despair as you turn around and see the door you went through disappear trapping you forever...");
+      $("#RoomBack").click(function () {
         $("body").css("background-image", 'url(MidSection1.png');
-        $(".cat").hide();
+        $(".barrelAsk").hide();
         $(".MidPage").show();
+      });
+    }
+  }
+
+  $("#ForestRightImg").click(function () {
+    $("body").css("background-image", 'url(cats.png');
+    $(".forest").hide();
+    $(".cat").show();
+    $("Slug").show();
+    $("#catAnswer1").html("You've arrived at an unknown place");
+
+    $("#catAnswer1").click(function () {
+      $("#catAnswer1").html("Um Where am I?");
+
+      $("#catAnswer1").click(function () {
+        $("#CatPortrait").html("<img src='CatHappy.png'>");
+        $("#catAnswer1").html("You my friend are at the Cat's Cradle");
+
+        $("#catAnswer1").click(function () {
+          $("#Slug").html("<img src='SlugUpset.png'>");
+          $("#catAnswer1").html("So uhh did I trespass?");
+
+          $("#catAnswer1").click(function () {
+            $("#CatPortrait").html("<img src='CatAngry.png'>");
+            $("#catAnswer1").html("Yes, yes you did and now I must turn you into a cat");
+
+            $("#catAnswer1").click(function () {
+              $("#Slug").hide();
+              $("#catTitle").hide();
+              $("#CatPortrait").hide();
+              $("body").css("background-image", 'url(BlackScreen.avif');
+              $("#catAnswer1").html("You feel a sudden surge of gravity, in an instant your body contorts into a grotesque form. You, in an attempt at desperation attempt to cry out for help. Meow! meow?? Herein lies your soul eternally in rest in the gentle embrace of the Cat's Cradle");
+            });
+          });
+        });
       });
     });
   });
@@ -122,11 +144,11 @@ $("#continue").click(function () {
     });
 
     //$("#LakeRightImg").click(function () {
-      //$("body").css("background-image", 'url(.png');
-      //$(".").show();
-      //$(".").hide()
-    });
+    //$("body").css("background-image", 'url(.png');
+    //$(".").show();
+    //$(".").hide()
   });
+});
 //});
 
 // MidPage End
