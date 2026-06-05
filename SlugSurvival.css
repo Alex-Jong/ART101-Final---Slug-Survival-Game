@@ -4,11 +4,6 @@ body {background-color: black; background-image: url(IntroBackground.png); backg
   display: none
 }
 
-/*#img1{
-  background-image:;
-  opacity: 0;
-}*/
-
 #TvScreen {
     background: transparent;
     border: none; 
@@ -148,6 +143,33 @@ body {background-color: black; background-image: url(IntroBackground.png); backg
     left: 650px; 
 }
 
+#CattyButton {
+    background: transparent;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: 220px; 
+    left: 300px; 
+}
+
+#BackroomsDialog {
+  position: relative; 
+  background-color: black; 
+  padding: 50px; 
+  border: 6px solid white;
+  border-radius: 15px; 
+  color: white;
+  width: 1000px;
+  left: 270px;
+  top: 300px;
+  text-align: center;
+}
+
+#CattyButton img {
+    width: 600px;
+}
+
 #RoomAnswer {
   text-align: center;
   height: auto;
@@ -220,6 +242,20 @@ body {background-color: black; background-image: url(IntroBackground.png); backg
   left: 600px; 
 }
 
+#Slug2 {
+  background: transparent;
+  border: none; 
+  padding: 0; 
+  outline: none;
+  position: relative;
+  top: 0px; 
+  left: 720px;
+}
+
+#Slug2 img {
+  width: 200px;
+}
+
 #CatPortrait {
   background: transparent;
   border: none; 
@@ -228,4 +264,56 @@ body {background-color: black; background-image: url(IntroBackground.png); backg
   position: relative;
   top: 0px; 
   left: -200px; 
+}
+
+#RiverFalldialog {
+  position: relative; 
+  background-color: black; 
+  padding: 50px; 
+  border: 6px solid white;
+  border-radius: 15px; 
+  color: white;
+  width: 1000px;
+  left: 270px;
+  top: 300px;
+  text-align: center;
+}
+
+#bannanajoesDialog {
+  position: relative; 
+  background-color: black; 
+  padding: 50px; 
+  border: 6px solid white;
+  border-radius: 15px; 
+  color: white;
+  width: 1000px;
+  left: 270px;
+  top: 300px;
+  text-align: center;
+}
+
+#Merilldialog {
+  position: relative; 
+  background-color: black; 
+  padding: 50px; 
+  border: 6px solid white;
+  border-radius: 15px; 
+  color: white;
+  width: 1000px;
+  left: 270px;
+  top: 300px;
+  text-align: center;
+}
+
+#FoodRoomDialog {
+  position: relative; 
+  background-color: black; 
+  padding: 50px; 
+  border: 6px solid white;
+  border-radius: 15px; 
+  color: white;
+  width: 1000px;
+  left: 270px;
+  top: 300px;
+  text-align: center;
 }

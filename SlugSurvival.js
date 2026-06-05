@@ -1,5 +1,8 @@
-// IntroPage Start
+// Hiding stuff
 $("#continue").hide()
+$("#RiverFalldialog").hide();
+$("#bannanajoesDialog").hide()
+$("#Merilldialog").hide();
 $(".CoverScreen").hide();
 $(".MidPage").hide();
 $(".lake").hide();
@@ -9,7 +12,11 @@ $(".downRiver").hide();
 $(".merill").hide();
 $(".barrel").hide();
 $(".barrelAsk").hide();
+$("#burger").hide();
+$("#coffee").hide();
+$("#FoodRoomDialog").hide();
 
+// IntroPage Start
 $("#TvScreen").hover(
   function () {
     $("#thought").stop(true, true).slideDown(300);
@@ -24,14 +31,13 @@ $("#TvScreen").click(function () {
   $("#TvScreen").hide();
   $("#continue").show();
   $(".CoverScreen").show();
-  // IntroPage End
 });
+// IntroPage End
 
 // MidPage Start
 $("#continue").click(function () {
   // MidPage Background Replacement
   $("body").css("background-image", 'url(MidSection1.png');
-  //$(#img1).css("opacity", )
   $(".MidPage").show();
   // Hide the previous Instruction Screen
   $("#continue").hide();
@@ -47,108 +53,184 @@ $("#continue").click(function () {
     $(".forest").show();
 
     // Forest Clickers
+
+    // Barrel Scene
     $("#ForestLeftImg").click(function () {
       $("body").css("background-image", 'url(barrels.png');
       $(".forest").hide();
       $(".barrel").show();
     });
   });
+});
 
-  $("#BarrelDoor").click(function () {
-    ask();
-  });
+$("#BarrelDoor").click(function () {
+  ask();
+});
 
-  function ask() {
+function ask() {
 
-    let user = prompt("Are you sure you want to enter? [Y/N]");
+  let user = prompt("Are you sure you want to enter? [Y/N]");
 
-    if (user == "Y") {
-      $("body").css("background-image", 'url(Backrooms.png');
-      $(".barrelAsk").show();
-      $(".barrel").hide();
-      $("#RoomAnswer").html("You gaze upon the unfamiliar place in awe. But awe turns to shock and despair as you turn around and see the door you went through disappear trapping you forever...");
-      $("#RoomBack").click(function () {
-        $("body").css("background-image", 'url(MidSection1.png');
-        $(".barrelAsk").hide();
-        $(".MidPage").show();
+  if (user == "Y") {
+    $("body").css("background-image", 'url(Backrooms.png');
+    $(".barrelAsk").show();
+    $(".barrel").hide();
+    $("#CattyButton").hide();
+    $("#BackroomsDialog").html("You've arrived at an unknown place");
+
+    $("#BackroomsDialog").click(function () {
+      $("#Slug2").html("<img src='SlugUpset.png'>");
+      $("#BackroomsDialog").html("Maybe look around for an escape?");
+
+      $("#BackroomsDialog").click(function () {
+        $("#Slug2").hide();
+        $("#BackroomsDialog").hide();
+        $("#CattyButton").show();
+
+        $("#CattyButton").click(function () {
+          $("body").css("background-image", 'url(');
+        });
       });
-    }
+    });
   }
+}
 
-  $("#ForestRightImg").click(function () {
-    $("body").css("background-image", 'url(cats.png');
-    $(".forest").hide();
-    $(".cat").show();
-    $("Slug").show();
-    $("#catAnswer1").html("You've arrived at an unknown place");
+// Cat Scene
+$("#ForestRightImg").click(function () {
+  $("body").css("background-image", 'url(cats.png');
+  $(".forest").hide();
+  $(".cat").show();
+  $("Slug").show();
+  $("#catAnswer1").html("You've arrived at an unknown place");
+
+  $("#catAnswer1").click(function () {
+    $("#catAnswer1").html("Um Where am I?");
 
     $("#catAnswer1").click(function () {
-      $("#catAnswer1").html("Um Where am I?");
+      $("#CatPortrait").html("<img src='CatHappy.png'>");
+      $("#catAnswer1").html("You my friend are at the Cat's Cradle");
 
       $("#catAnswer1").click(function () {
-        $("#CatPortrait").html("<img src='CatHappy.png'>");
-        $("#catAnswer1").html("You my friend are at the Cat's Cradle");
+        $("#Slug").html("<img src='SlugUpset.png'>");
+        $("#catAnswer1").html("So uhh did I trespass?");
 
         $("#catAnswer1").click(function () {
-          $("#Slug").html("<img src='SlugUpset.png'>");
-          $("#catAnswer1").html("So uhh did I trespass?");
+          $("#CatPortrait").html("<img src='CatAngry.png'>");
+          $("#catAnswer1").html("Yes, yes you did and now I must turn you into a cat");
 
           $("#catAnswer1").click(function () {
-            $("#CatPortrait").html("<img src='CatAngry.png'>");
-            $("#catAnswer1").html("Yes, yes you did and now I must turn you into a cat");
+            $("#Slug").hide();
+            $("#catTitle").hide();
+            $("#CatPortrait").hide();
+            $("body").css("background-image", 'url(BlackScreen.avif');
+            $("#catAnswer1").html("You feel a sudden surge of gravity, like up is down and down is up, you lose your sense of direction and feel like you are falling endlessly...");
 
             $("#catAnswer1").click(function () {
-              $("#Slug").hide();
-              $("#catTitle").hide();
-              $("#CatPortrait").hide();
-              $("body").css("background-image", 'url(BlackScreen.avif');
-              $("#catAnswer1").html("You feel a sudden surge of gravity, in an instant your body contorts into a grotesque form. You, in an attempt at desperation attempt to cry out for help. Meow! meow?? Herein lies your soul eternally in rest in the gentle embrace of the Cat's Cradle");
+              $(".cat").hide()
             });
           });
         });
       });
     });
   });
+});
 
-  // Lake Path
-  $("#RightImg").click(function () {
-    $("body").css("background-image", 'url(lake.png');
-    $(".MidPage").hide();
-    $(".lake").show();
+// Lake Path
+$("#RightImg").click(function () {
+  $("body").css("background-image", 'url(lake.png');
+  $(".MidPage").hide();
+  $(".lake").show();
 
-    // Lake Clickers
-    $("#LakeLeftImg").click(function () {
-      $("body").css("background-image", 'url(MidSection1.png');
-      $(".MidPage").show();
-      $(".lake").hide();
-    });
+  // Lake Clickers
 
-    $("#LakeRightImg").click(function () {
-      $("body").css("background-image", 'url(DownRiver.png');
-      $(".downRiver").show();
-      $(".lake").hide()
-    });
+  // Return to Forest Scene
+  $("#LakeLeftImg").click(function () {
+    $("body").css("background-image", 'url(MidSection1.png');
+    $(".MidPage").show();
+    $(".lake").hide();
   });
 
-  // River Up Path
-  $("#RiverUp").click(function () {
-    $("body").css("background-image", 'url(MerillMarket.png');
-    $(".downRiver").hide();
-    $(".merill").show();
+  // Down River Scene
+  $("#LakeRightImg").click(function () {
+    $("body").css("background-image", 'url(DownRiver.png');
+    $(".downRiver").show();
+    $(".lake").hide()
 
-    // Merill Clickers
-    $("#explore").click(function () {
-      $("body").css("background-image", 'url(BannanaJoes.png');
-      //$(".").show();
-      $(".merill").hide();
+    $("#RiverUp").click(function () {
+      $("body").css("background-image", 'url(MerillMarket.png');
+      $(".downRiver").hide();
+      $(".merill").show();
+
+      // Merill Clickers
+      $("#explore").click(function () {
+        $("body").css("background-image", 'url(BannanaJoes.png');
+        $("#bannanajoesDialog").show();
+        $(".merill").hide();
+        $("#bannanajoesDialog").html("You look at aw at the amazing store, deciding you are a bit hungry you enter the restaurant...");
+      });
+
+      $("#bannanajoesDialog").click(function () {
+        $("body").css("background-image", 'url(BlackScreen.avif');
+        $("#bannanajoesDialog").html("You enter the restaurant only for your vision to go blank for a bit...")
+
+        $("#bannanajoesDialog").click(function () {
+          $("body").css("background-image", 'url(FoodRoom.png');
+          $("#bannanajoesDialog").html("You regain your sight and look around the room...")
+
+          $("#bannanajoesDialog").click(function () {
+            $("#bannanajoesDialog").hide();
+            $("#FoodRoomDialog").show();
+
+            $("#FoodRoomDialog").click(function () {
+              $("#burger").show();
+              $("#FoodRoomDialog").html("Hello there..")
+            });
+          });
+        });
+      });
+
+      $("#enter").click(function () {
+        $("body").css("background-image", 'url(BlackScreen.avif');
+        $(".merill").hide();
+        $("#Merilldialog").show();
+        $("#Merilldialog").html("You enter the store only for your vision to go blank for a bit...")
+
+        $("#Merilldialog").click(function () {
+          $("body").css("background-image", 'url(FoodRoom.png');
+          $("#Merilldialog").html("Your sight comes back to you as you behold a sight")
+
+          $("#Merilldialog").click(function () {
+
+            $("#Merilldialog").html("Your sight comes back to you as you behold a sight")
+          });
+        });
+      });
     });
 
-    //$("#LakeRightImg").click(function () {
-    //$("body").css("background-image", 'url(.png');
-    //$(".").show();
-    //$(".").hide()
+    $("#RiverContinue").click(function () {
+      $("body").css("background-image", 'url(ContinueDownRiver.png');
+      $(".downRiver").hide();
+      $("#RiverFalldialog").show();
+      $("#RiverFalldialog").html("You continue down the river only to slip and fall down the waterfall.. everything fades to black");
+
+      $("#RiverFalldialog").click(function () {
+        $("body").css("background-image", 'url(BlackScreen.avif');
+        $("#RiverFalldialog").html("As you are out you start to gradually wake up...");
+
+        $("#RiverFalldialog").click(function () {
+          $("body").css("background-image", 'url(RiverRoom.jpg');
+          $("#RiverFalldialog").hide();
+        });
+      });
+    });
   });
 });
-//});
+
+// River Up Path
+
+// Down the River more
+
+
+// Uphill Scene
 
 // MidPage End
