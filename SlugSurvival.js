@@ -15,6 +15,10 @@ $(".barrelAsk").hide();
 $("#burger").hide();
 $("#coffee").hide();
 $("#FoodRoomDialog").hide();
+$("#shelf").hide();
+$("#bread").hide();
+$("#PoolButton").hide();
+$(".FoodRoomsDoor").hide();
 
 // IntroPage Start
 $("#TvScreen").hover(
@@ -88,7 +92,69 @@ function ask() {
         $("#CattyButton").show();
 
         $("#CattyButton").click(function () {
-          $("body").css("background-image", 'url(');
+          $("body").css("background-image", 'url(CatRoom.png');
+          $("#CattyButton").hide();
+          $(".FoodRoomsDoor").show();
+
+          $("#exit").click(function () {
+            ask();
+          });
+
+          function ask() {
+
+            let user = prompt("What is the passcode? MAKE SURE TO VISIT THE FOOD ROOM FIRST OR ELSE!!!");
+
+            if (user == "1738") {
+
+            }
+            else {
+
+            }
+          }
+
+          $("#FoodDoor").click(function () {
+            $("body").css("background-image", 'url(FoodRoom.png');
+            $(".FoodRoomsDoor").hide();
+            $("#FoodRoomDialog").show();
+
+            $("#FoodRoomDialog").click(function () {
+              $("#burger").show();
+              $("#FoodRoomDialog").html("Hello there..")
+
+              $("#FoodRoomDialog").click(function () {
+                $("#FoodRoomDialog").html("Welcome to my restaurant")
+
+                $("#FoodRoomDialog").click(function () {
+                  $("#FoodRoomDialog").html("To escape this maze there is a door, yet it needs a code...")
+
+                  $("#FoodRoomDialog").click(function () {
+                    $("#FoodRoomDialog").html("Find out how much my order of a Ham & Cheese Sandwhich costs and I'll give you the code")
+
+                    $("#FoodRoomDialog").click(function () {
+                      $("#FoodRoomDialog").hide();
+                      $("#shelf").show();
+
+                      $("#shelf").click(function () {
+                        $("body").css("background-image", 'url(shelf.jpg');
+                        $("#shelf").hide();
+                        $("#burger").hide();
+                        $("#bread").show();
+
+                        $("#bread").hover(
+                          function () {
+                            $("#Breadthought").stop(true, true).slideDown(300);
+                          },
+                          function () {
+                            $("#Breadthought").stop(true, true).slideUp(300);
+                          }
+                        );
+                      });
+                    });
+                  });
+                });
+              });
+            })
+          });
         });
       });
     });
@@ -126,7 +192,70 @@ $("#ForestRightImg").click(function () {
             $("#catAnswer1").html("You feel a sudden surge of gravity, like up is down and down is up, you lose your sense of direction and feel like you are falling endlessly...");
 
             $("#catAnswer1").click(function () {
-              $(".cat").hide()
+              $("body").css("background-image", 'url(CatRoom.png');
+              $("#catAnswer").hide();
+              $("#PoolButton").hide();
+              $(".FoodRoomsDoor").show();
+
+              $("#exit").click(function () {
+                ask();
+              });
+
+              function ask() {
+
+                let user = prompt("What is the passcode? MAKE SURE TO VISIT THE FOOD ROOM FIRST OR ELSE!!!");
+
+                if (user == "1738") {
+
+                }
+                else {
+
+                }
+              }
+
+              $("#FoodDoor").click(function () {
+                $("body").css("background-image", 'url(FoodRoom.png');
+                $(".FoodRoomsDoor").hide();
+                $("#FoodRoomDialog").show();
+
+                $("#FoodRoomDialog").click(function () {
+                  $("#burger").show();
+                  $("#FoodRoomDialog").html("Hello there..")
+
+                  $("#FoodRoomDialog").click(function () {
+                    $("#FoodRoomDialog").html("Welcome to my restaurant")
+
+                    $("#FoodRoomDialog").click(function () {
+                      $("#FoodRoomDialog").html("To escape this maze there is a door, yet it needs a code...")
+
+                      $("#FoodRoomDialog").click(function () {
+                        $("#FoodRoomDialog").html("Find out how much my order of a Ham & Cheese Sandwhich costs and I'll give you the code")
+
+                        $("#FoodRoomDialog").click(function () {
+                          $("#FoodRoomDialog").hide();
+                          $("#shelf").show();
+
+                          $("#shelf").click(function () {
+                            $("body").css("background-image", 'url(shelf.jpg');
+                            $("#shelf").hide();
+                            $("#burger").hide();
+                            $("#bread").show();
+
+                            $("#bread").hover(
+                              function () {
+                                $("#Breadthought").stop(true, true).slideDown(300);
+                              },
+                              function () {
+                                $("#Breadthought").stop(true, true).slideUp(300);
+                              }
+                            );
+                          });
+                        });
+                      });
+                    });
+                  });
+                })
+              });
             });
           });
         });
@@ -184,6 +313,39 @@ $("#RightImg").click(function () {
             $("#FoodRoomDialog").click(function () {
               $("#burger").show();
               $("#FoodRoomDialog").html("Hello there..")
+
+              $("#FoodRoomDialog").click(function () {
+                $("#FoodRoomDialog").html("Welcome to my restaurant")
+
+                $("#FoodRoomDialog").click(function () {
+                  $("#FoodRoomDialog").html("To escape this maze there is a door, yet it needs a code...")
+
+                  $("#FoodRoomDialog").click(function () {
+                    $("#FoodRoomDialog").html("Find out how much my order of a Ham & Cheese Sandwhich costs and I'll give you the code")
+
+                    $("#FoodRoomDialog").click(function () {
+                      $("#FoodRoomDialog").hide();
+                      $("#shelf").show();
+
+                      $("#shelf").click(function () {
+                        $("body").css("background-image", 'url(shelf.jpg');
+                        $("#shelf").hide();
+                        $("#burger").hide();
+                        $("#bread").show();
+
+                        $("#bread").hover(
+                          function () {
+                            $("#Breadthought").stop(true, true).slideDown(300);
+                          },
+                          function () {
+                            $("#Breadthought").stop(true, true).slideUp(300);
+                          }
+                        );
+                      });
+                    });
+                  });
+                });
+              });
             });
           });
         });
@@ -200,8 +362,37 @@ $("#RightImg").click(function () {
           $("#Merilldialog").html("Your sight comes back to you as you behold a sight")
 
           $("#Merilldialog").click(function () {
+            $("#Merilldialog").hide();
+            $("#FoodRoomDialog").show();
 
-            $("#Merilldialog").html("Your sight comes back to you as you behold a sight")
+            $("#FoodRoomDialog").click(function () {
+              $("#coffee").show();
+              $("#FoodRoomDialog").html("Hello there..")
+
+              $("#FoodRoomDialog").click(function () {
+                $("#FoodRoomDialog").html("Welcome to my restaurant")
+
+                $("#FoodRoomDialog").click(function () {
+                  $("#FoodRoomDialog").html("To escape this maze there is a door, yet it needs a code...")
+
+                  $("#FoodRoomDialog").click(function () {
+                    $("#FoodRoomDialog").html("Find out how much my order of a Ham & Cheese Sandwhich costs and I'll give you the code")
+
+                    $("#FoodRoomDialog").click(function () {
+                      $("#FoodRoomDialog").hide();
+                      $("#shelf").show();
+
+                      $("#shelf").click(function () {
+                        $("body").css("background-image", 'url(shelf.jpg');
+                        $("#shelf").hide();
+                        $("#coffee").hide();
+                        $("#bread").show();
+                      });
+                    });
+                  });
+                });
+              });
+            });
           });
         });
       });
@@ -218,8 +409,75 @@ $("#RightImg").click(function () {
         $("#RiverFalldialog").html("As you are out you start to gradually wake up...");
 
         $("#RiverFalldialog").click(function () {
-          $("body").css("background-image", 'url(RiverRoom.jpg');
+          $("body").css("background-image", 'url(RiverRoom.png');
           $("#RiverFalldialog").hide();
+          $("#PoolButton").show();
+
+          $("#PoolButton").click(function () {
+            $("body").css("background-image", 'url(CatRoom.png');
+            $("#PoolButton").hide();
+            $(".FoodRoomsDoor").show();
+
+            $("#exit").click(function () {
+              ask();
+            });
+
+            function ask() {
+
+              let user = prompt("What is the passcode? MAKE SURE TO VISIT THE FOOD ROOM FIRST OR ELSE!!!");
+
+              if (user == "1738") {
+
+              }
+              else {
+
+              }
+            }
+
+            $("#FoodDoor").click(function () {
+              $("body").css("background-image", 'url(FoodRoom.png');
+              $(".FoodRoomsDoor").hide();
+              $("#FoodRoomDialog").show();
+
+              $("#FoodRoomDialog").click(function () {
+                $("#burger").show();
+                $("#FoodRoomDialog").html("Hello there..")
+
+                $("#FoodRoomDialog").click(function () {
+                  $("#FoodRoomDialog").html("Welcome to my restaurant")
+
+                  $("#FoodRoomDialog").click(function () {
+                    $("#FoodRoomDialog").html("To escape this maze there is a door, yet it needs a code...")
+
+                    $("#FoodRoomDialog").click(function () {
+                      $("#FoodRoomDialog").html("Find out how much my order of a Ham & Cheese Sandwhich costs and I'll give you the code")
+
+                      $("#FoodRoomDialog").click(function () {
+                        $("#FoodRoomDialog").hide();
+                        $("#shelf").show();
+
+                        $("#shelf").click(function () {
+                          $("body").css("background-image", 'url(shelf.jpg');
+                          $("#shelf").hide();
+                          $("#burger").hide();
+                          $("#bread").show();
+
+                          $("#bread").hover(
+                            function () {
+                              $("#Breadthought").stop(true, true).slideDown(300);
+                            },
+                            function () {
+                              $("#Breadthought").stop(true, true).slideUp(300);
+                            }
+                          );
+                        });
+                      });
+                    });
+                  });
+                });
+              })
+            });
+          });
         });
       });
     });

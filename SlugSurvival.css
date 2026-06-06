@@ -234,16 +234,18 @@ body {background-color: black; background-image: url(IntroBackground.png); backg
 
 #Slug {
   background: transparent;
+  display: inline-block;
   border: none; 
   padding: 0; 
   outline: none;
   position: relative;
-  top: 200px; 
+  top: 0px; 
   left: 600px; 
 }
 
 #Slug2 {
   background: transparent;
+  display: inline-block;
   border: none; 
   padding: 0; 
   outline: none;
@@ -258,12 +260,13 @@ body {background-color: black; background-image: url(IntroBackground.png); backg
 
 #CatPortrait {
   background: transparent;
+  display: inline-block;
   border: none; 
   padding: 0; 
   outline: none;
   position: relative;
   top: 0px; 
-  left: -200px; 
+  left: -400px; 
 }
 
 #RiverFalldialog {
@@ -313,7 +316,112 @@ body {background-color: black; background-image: url(IntroBackground.png); backg
   border-radius: 15px; 
   color: white;
   width: 1000px;
-  left: 270px;
+  left: 320px;
   top: 300px;
   text-align: center;
+}
+
+#burger {
+  background: transparent;
+  display: inline-block;
+  border: none; 
+  padding: 0; 
+  outline: none;
+  position: relative;
+  top: 260px; 
+  left: 740px;
+}
+
+#burger img {
+  width: 200px;
+}
+
+#coffee {
+  background: transparent;
+  display: inline-block;
+  border: none; 
+  padding: 0; 
+  outline: none;
+  position: relative;
+  top: 260px; 
+  left: 740px;
+}
+
+#coffee img {
+  width: 200px;
+}
+
+#shelf {
+    background: transparent;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: 335px; 
+    left: 120px; 
+}
+
+#shelf img {
+    width: 200px;
+}
+
+#bread {
+    background: transparent;
+    display: inline-block;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: 300px; 
+    left: 300px; 
+}
+
+#bread img {
+    width: 200px;
+}
+
+#Breadthought {
+  display: none;
+  position: absolute;
+  left: 300px;
+  top: 450px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 12px;
+  width: 180px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+#PoolButton {
+    background: transparent;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: -5px; 
+    left: 750px; 
+}
+
+#exit {
+    background: transparent;
+    display: inline-block;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: -70px; 
+    left: 1100px; 
+}
+
+#FoodDoor {
+    background: transparent;
+    display: inline-block;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: 100px; 
+    left: -300px; 
 }
