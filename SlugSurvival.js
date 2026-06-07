@@ -79,7 +79,7 @@ $("#BarrelDoor").click(function () {
   askEnter();
 });
 
-// Enter Backrooms Enterance
+// Enter Backrooms Entrance
 function askEnter() {
 
   let user = prompt("Are you sure you want to enter? [Y/N]");
