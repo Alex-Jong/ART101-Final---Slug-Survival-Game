@@ -139,7 +139,7 @@ function askEnter() {
                   $("#FoodRoomDialog").html("To escape this maze there is a door, yet it needs a code...")
 
                   $("#FoodRoomDialog").click(function () {
-                    $("#FoodRoomDialog").html("Find out how much my order of a Ham & Cheese Sandwhich costs and I'll give you the code")
+                    $("#FoodRoomDialog").html("Find out how much my order of a Ham & Cheese Sandwich costs and I'll give you the code")
 
                     $("#FoodRoomDialog").click(function () {
                       $("#FoodRoomDialog").hide();
@@ -220,7 +220,7 @@ function askEnter() {
 
                           function askPrice() {
 
-                            let user = prompt("What is the total price of a Ham & Cheese Sandwhich?");
+                            let user = prompt("What is the total price of a Ham & Cheese Sandwich?");
 
                             if (user == "$63") {
                               $("#Burgerthought").html("The code is 1738")
@@ -256,7 +256,7 @@ function askEnter() {
                                 $("#GoodEnding").html("The door opens and your sight is temporarily blinded");
 
                                 $("#GoodEnding").click(function () {
-                                  $("#GoodEnding").html("In pitch blackness you take a brave step and move foward..");
+                                  $("#GoodEnding").html("In pitch blackness you take a brave step and move forward..");
 
                                   $("#GoodEnding").click(function () {
                                     $("#GoodEnding").html("You Reached the Good Ending");
@@ -272,7 +272,7 @@ function askEnter() {
                                 $("#BadEnding").html("The door opens and your sight is temporarily blinded");
 
                                 $("#BadEnding").click(function () {
-                                  $("#BadEnding").html("In pitch blackness you take a brave step and move foward..");
+                                  $("#BadEnding").html("In pitch blackness you take a brave step and move forward..");
 
                                   $("#BadEnding").click(function () {
                                     $("#BadEnding").html("You Reached the Bad Ending");
@@ -367,7 +367,7 @@ $("#ForestRightImg").click(function () {
                       $("#FoodRoomDialog").html("To escape this maze there is a door, yet it needs a code...")
 
                       $("#FoodRoomDialog").click(function () {
-                        $("#FoodRoomDialog").html("Find out how much my order of a Ham & Cheese Sandwhich costs and I'll give you the code")
+                        $("#FoodRoomDialog").html("Find out how much my order of a Ham & Cheese Sandwich costs and I'll give you the code")
 
                         $("#FoodRoomDialog").click(function () {
                           $("#FoodRoomDialog").hide();
@@ -448,7 +448,7 @@ $("#ForestRightImg").click(function () {
 
                               function askPrice() {
 
-                                let user = prompt("What is the total price of a Ham & Cheese Sandwhich?");
+                                let user = prompt("What is the total price of a Ham & Cheese Sandwich?");
 
                                 if (user == "$63") {
                                   $("#Burgerthought").html("The code is 1738")
@@ -484,7 +484,7 @@ $("#ForestRightImg").click(function () {
                                     $("#GoodEnding").html("The door opens and your sight is temporarily blinded");
 
                                     $("#GoodEnding").click(function () {
-                                      $("#GoodEnding").html("In pitch blackness you take a brave step and move foward..");
+                                      $("#GoodEnding").html("In pitch blackness you take a brave step and move forward..");
 
                                       $("#GoodEnding").click(function () {
                                         $("#GoodEnding").html("You Reached the Good Ending");
@@ -500,7 +500,7 @@ $("#ForestRightImg").click(function () {
                                     $("#BadEnding").html("The door opens and your sight is temporarily blinded");
 
                                     $("#BadEnding").click(function () {
-                                      $("#BadEnding").html("In pitch blackness you take a brave step and move foward..");
+                                      $("#BadEnding").html("In pitch blackness you take a brave step and move forward..");
 
                                       $("#BadEnding").click(function () {
                                         $("#BadEnding").html("You Reached the Bad Ending");
@@ -586,7 +586,7 @@ $("#RightImg").click(function () {
                   $("#FoodRoomDialog").html("To escape this maze there is a door, yet it needs a code...")
 
                   $("#FoodRoomDialog").click(function () {
-                    $("#FoodRoomDialog").html("Find out how much my order of a Ham & Cheese Sandwhich costs and I'll give you the code")
+                    $("#FoodRoomDialog").html("Find out how much my order of a Ham & Cheese Sandwich costs and I'll give you the code")
 
                     $("#FoodRoomDialog").click(function () {
                       $("#FoodRoomDialog").hide();
@@ -667,7 +667,7 @@ $("#RightImg").click(function () {
 
                           function askPrice() {
 
-                            let user = prompt("What is the total price of a Ham & Cheese Sandwhich?");
+                            let user = prompt("What is the total price of a Ham & Cheese Sandwich?");
 
                             if (user == "$63") {
                               $("#Burgerthought").html("The code is 1738")
@@ -703,7 +703,7 @@ $("#RightImg").click(function () {
                                 $("#GoodEnding").html("The door opens and your sight is temporarily blinded");
 
                                 $("#GoodEnding").click(function () {
-                                  $("#GoodEnding").html("In pitch blackness you take a brave step and move foward..");
+                                  $("#GoodEnding").html("In pitch blackness you take a brave step and move forward..");
 
                                   $("#GoodEnding").click(function () {
                                     $("#GoodEnding").html("You Reached the Good Ending");
@@ -719,7 +719,7 @@ $("#RightImg").click(function () {
                                 $("#BadEnding").html("The door opens and your sight is temporarily blinded");
 
                                 $("#BadEnding").click(function () {
-                                  $("#BadEnding").html("In pitch blackness you take a brave step and move foward..");
+                                  $("#BadEnding").html("In pitch blackness you take a brave step and move forward..");
 
                                   $("#BadEnding").click(function () {
                                     $("#BadEnding").html("You Reached the Bad Ending");
@@ -767,7 +767,7 @@ $("#RightImg").click(function () {
                   $("#FoodRoomDialog").html("To escape this maze there is a door, yet it needs a code...")
 
                   $("#FoodRoomDialog").click(function () {
-                    $("#FoodRoomDialog").html("Find out how much my order of a Ham & Cheese Sandwhich costs and I'll give you the code")
+                    $("#FoodRoomDialog").html("Find out how much my order of a Ham & Cheese Sandwich costs and I'll give you the code")
 
                     $("#FoodRoomDialog").click(function () {
                       $("#FoodRoomDialog").hide();
@@ -848,7 +848,7 @@ $("#RightImg").click(function () {
 
                           function askPrice() {
 
-                            let user = prompt("What is the total price of a Ham & Cheese Sandwhich?");
+                            let user = prompt("What is the total price of a Ham & Cheese Sandwich?");
 
                             if (user == "$63") {
                               $("#Coffeethought").html("The code is 1738")
@@ -884,7 +884,7 @@ $("#RightImg").click(function () {
                                 $("#GoodEnding").html("The door opens and your sight is temporarily blinded");
 
                                 $("#GoodEnding").click(function () {
-                                  $("#GoodEnding").html("In pitch blackness you take a brave step and move foward..");
+                                  $("#GoodEnding").html("In pitch blackness you take a brave step and move forward..");
 
                                   $("#GoodEnding").click(function () {
                                     $("#GoodEnding").html("You Reached the Good Ending");
@@ -900,7 +900,7 @@ $("#RightImg").click(function () {
                                 $("#BadEnding").html("The door opens and your sight is temporarily blinded");
 
                                 $("#BadEnding").click(function () {
-                                  $("#BadEnding").html("In pitch blackness you take a brave step and move foward..");
+                                  $("#BadEnding").html("In pitch blackness you take a brave step and move forward..");
 
                                   $("#BadEnding").click(function () {
                                     $("#BadEnding").html("You Reached the Bad Ending");
@@ -978,7 +978,7 @@ $("#RightImg").click(function () {
                     $("#FoodRoomDialog").html("To escape this maze there is a door, yet it needs a code...")
 
                     $("#FoodRoomDialog").click(function () {
-                      $("#FoodRoomDialog").html("Find out how much my order of a Ham & Cheese Sandwhich costs and I'll give you the code")
+                      $("#FoodRoomDialog").html("Find out how much my order of a Ham & Cheese Sandwich costs and I'll give you the code")
 
                       $("#FoodRoomDialog").click(function () {
                         $("#FoodRoomDialog").hide();
@@ -1059,7 +1059,7 @@ $("#RightImg").click(function () {
 
                             function askPrice() {
 
-                              let user = prompt("What is the total price of a Ham & Cheese Sandwhich?");
+                              let user = prompt("What is the total price of a Ham & Cheese Sandwich?");
 
                               if (user == "$63") {
                                 $("#Burgerthought").html("The code is 1738")
@@ -1095,7 +1095,7 @@ $("#RightImg").click(function () {
                                   $("#GoodEnding").html("The door opens and your sight is temporarily blinded");
 
                                   $("#GoodEnding").click(function () {
-                                    $("#GoodEnding").html("In pitch blackness you take a brave step and move foward..");
+                                    $("#GoodEnding").html("In pitch blackness you take a brave step and move forward..");
 
                                     $("#GoodEnding").click(function () {
                                       $("#GoodEnding").html("You Reached the Good Ending");
@@ -1111,7 +1111,7 @@ $("#RightImg").click(function () {
                                   $("#BadEnding").html("The door opens and your sight is temporarily blinded");
 
                                   $("#BadEnding").click(function () {
-                                    $("#BadEnding").html("In pitch blackness you take a brave step and move foward..");
+                                    $("#BadEnding").html("In pitch blackness you take a brave step and move forward..");
 
                                     $("#BadEnding").click(function () {
                                       $("#BadEnding").html("You Reached the Bad Ending");
