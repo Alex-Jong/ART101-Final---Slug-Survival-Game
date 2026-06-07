@@ -808,7 +808,7 @@ $("#RightImg").click(function () {
                           $("#shelf").hide();
                           $("#backing").show();
 
-                          $("#burger").click(function () {
+                          $("#coffee").click(function () {
                             askPrice();
                           });
 
@@ -830,7 +830,7 @@ $("#RightImg").click(function () {
                             $("#exit1").show();
                             $("#FoodDoor1").show()
                             $("#FoodRoomDialog").hide();
-                            $("#burger").hide();
+                            $("#coffee").hide();
                             $("#backing").hide();
 
                             // Ending
