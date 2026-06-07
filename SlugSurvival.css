@@ -380,11 +380,98 @@ body {background-color: black; background-image: url(IntroBackground.png); backg
     width: 200px;
 }
 
+#ham {
+    background: transparent;
+    display: inline-block;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: 280px; 
+    left: 400px; 
+}
+
+#ham img {
+    width: 400px;
+}
+
+#cheese {
+    background: transparent;
+    display: inline-block;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: 400px; 
+    left: 340px; 
+}
+
+#cheese img {
+    width: 400px;
+}
+
+#bannana {
+    background: transparent;
+    display: inline-block;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: 270px; 
+    left: 260px; 
+}
+
+#bannana img {
+    width: 200px;
+}
+
 #Breadthought {
   display: none;
   position: absolute;
   left: 300px;
   top: 450px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 12px;
+  width: 180px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+#Hamthought {
+  display: none;
+  position: absolute;
+  left: 700px;
+  top: 450px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 12px;
+  width: 180px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+#Cheesethought {
+  display: none;
+  position: absolute;
+  left: 1050px;
+  top: 600px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 12px;
+  width: 180px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+#Bannanathought {
+  display: none;
+  position: absolute;
+  left: 1300px;
+  top: 550px;
   background: white;
   border: 2px solid black;
   border-radius: 20px;
@@ -415,6 +502,17 @@ body {background-color: black; background-image: url(IntroBackground.png); backg
     left: 1100px; 
 }
 
+#exit1 {
+    background: transparent;
+    display: inline-block;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: -70px; 
+    left: 1100px; 
+}
+
 #FoodDoor {
     background: transparent;
     display: inline-block;
@@ -424,4 +522,73 @@ body {background-color: black; background-image: url(IntroBackground.png); backg
     position: relative;
     top: 100px; 
     left: -300px; 
+}
+
+#FoodDoor1 {
+    background: transparent;
+    display: inline-block;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: 100px; 
+    left: -300px; 
+}
+
+#back {
+    background: transparent;
+    display: inline-block;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: -230px; 
+    left: 0px; 
+}
+
+#back img {
+   width: 400px 
+}
+
+#backing {
+    background: transparent;
+    display: inline-block;
+    border: none; 
+    padding: 0; 
+    outline: none;
+    position: relative;
+    top: 100px; 
+    left: 1400px; 
+}
+
+#backing img {
+   width: 200px 
+}
+
+#GoodEnding {
+  position: relative; 
+  background-color: black; 
+  padding: 50px; 
+  border: 6px solid white;
+  border-radius: 15px; 
+  color: white;
+  width: 1000px;
+  left: 320px;
+  top: 0px;
+  text-align: center;
+  color: Green;
+}
+
+#BadEnding {
+  position: relative; 
+  background-color: black; 
+  padding: 50px; 
+  border: 6px solid white;
+  border-radius: 15px; 
+  color: white;
+  width: 1000px;
+  left: 320px;
+  top: 0px;
+  text-align: center;
+  color: red;
 }

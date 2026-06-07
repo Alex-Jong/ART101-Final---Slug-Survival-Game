@@ -19,6 +19,15 @@ $("#shelf").hide();
 $("#bread").hide();
 $("#PoolButton").hide();
 $(".FoodRoomsDoor").hide();
+$("#back").hide();
+$("#ham").hide();
+$("#cheese").hide();
+$("#bannana").hide();
+$("#backing").hide();
+$("#GoodEnding").hide();
+$("#BadEnding").hide();
+$("#exit1").hide()
+$("#FoodDoor1").hide()
 
 // IntroPage Start
 $("#TvScreen").hover(
@@ -68,10 +77,10 @@ $("#continue").click(function () {
 });
 
 $("#BarrelDoor").click(function () {
-  ask();
+  askEnter();
 });
 
-function ask() {
+function askEnter() {
 
   let user = prompt("Are you sure you want to enter? [Y/N]");
 
@@ -97,12 +106,12 @@ function ask() {
           $(".FoodRoomsDoor").show();
 
           $("#exit").click(function () {
-            ask();
+            askCode();
           });
 
-          function ask() {
+          function askCode() {
 
-            let user = prompt("What is the passcode? MAKE SURE TO VISIT THE FOOD ROOM FIRST OR ELSE!!!");
+            let user = prompt("MAKE SURE TO VISIT THE FOOD ROOM FIRST!!!");
 
             if (user == "1738") {
 
@@ -139,6 +148,10 @@ function ask() {
                         $("#shelf").hide();
                         $("#burger").hide();
                         $("#bread").show();
+                        $("#ham").show();
+                        $("#cheese").show();
+                        $("#back").show();
+                        $("#bannana").show();
 
                         $("#bread").hover(
                           function () {
@@ -148,6 +161,114 @@ function ask() {
                             $("#Breadthought").stop(true, true).slideUp(300);
                           }
                         );
+
+                        $("#ham").hover(
+                          function () {
+                            $("#Hamthought").stop(true, true).slideDown(300);
+                          },
+                          function () {
+                            $("#Hamthought").stop(true, true).slideUp(300);
+                          }
+                        );
+
+                        $("#cheese").hover(
+                          function () {
+                            $("#Cheesethought").stop(true, true).slideDown(300);
+                          },
+                          function () {
+                            $("#Cheesethought").stop(true, true).slideUp(300);
+                          }
+                        );
+
+                        $("#bannana").hover(
+                          function () {
+                            $("#Bannanathought").stop(true, true).slideDown(300);
+                          },
+                          function () {
+                            $("#Bannanathought").stop(true, true).slideUp(300);
+                          }
+                        );
+
+                        $("#back").click(function () {
+                          $("body").css("background-image", 'url(FoodRoom.png');
+                          $("#bread").hide();
+                          $("#ham").hide();
+                          $("#cheese").hide();
+                          $("#back").hide();
+                          $("#FoodRoomDialog").show();
+                          $("#bannana").hide();
+                          $("#FoodRoomDialog").html("So did you find the price? Click on my portrait if you found out")
+                          $("#burger").show();
+                          $("#shelf").hide();
+                          $("#backing").show();
+
+                          $("#burger").click(function () {
+                            askPrice();
+                          });
+
+                          function askPrice() {
+
+                            let user = prompt("What is the total price of a Ham & Cheese Sandwhich?");
+
+                            if (user == "$63") {
+                              $("#FoodRoomDialog").html("The code is 1738")
+                            }
+                            else {
+                              $("#FoodRoomDialog").html("Nope, try again..")
+                            }
+                          }
+
+                          $("#backing").click(function () {
+                            $("body").css("background-image", 'url(CatRoom.png');
+                            $("#exit1").show();
+                            $("#FoodDoor1").show()
+                            $("#FoodRoomDialog").hide();
+                            $("#burger").hide();
+                            $("#backing").hide();
+
+                            $("#exit1").click(function () {
+                              askEnd();
+                            });
+
+                            function askEnd() {
+
+                              let user = prompt("What is the passcode?");
+
+                              if (user == "1738") {
+                                $("body").css("background-image", 'url(BlackScreen.avif');
+                                $("#exit1").hide();
+                                $("#FoodDoor1").hide();
+                                $("#GoodEnding").show();
+                                $("#GoodEnding").html("The door opens and your sight is temporarily blinded");
+
+                                $("#GoodEnding").click(function () {
+                                  $("#GoodEnding").html("In pitch blackness you take a brave step and move foward..");
+
+                                  $("#GoodEnding").click(function () {
+                                    $("#GoodEnding").html("You Reached the Good Ending");
+                                    $("body").css("background-image", 'url(GoodEnding.png');
+                                  });
+                                });
+                              }
+                              else {
+                                $("body").css("background-image", 'url(BlackScreen.avif');
+                                $("#FoodDoor1").hide();
+                                $("#exit1").hide()
+                                $("#BadEnding").show();
+                                $("#BadEnding").html("The door opens and your sight is temporarily blinded");
+
+                                $("#BadEnding").click(function () {
+                                  $("#BadEnding").html("In pitch blackness you take a brave step and move foward..");
+
+                                  $("#BadEnding").click(function () {
+                                    $("#BadEnding").html("You Reached the Bad Ending");
+                                    $("body").css("background-image", 'url(BadEnding.png');
+                                  });
+                                });
+                              }
+                            }
+                          });
+                        });
                       });
                     });
                   });
@@ -198,12 +319,12 @@ $("#ForestRightImg").click(function () {
               $(".FoodRoomsDoor").show();
 
               $("#exit").click(function () {
-                ask();
+                askCode();
               });
 
-              function ask() {
+              function askCode() {
 
-                let user = prompt("What is the passcode? MAKE SURE TO VISIT THE FOOD ROOM FIRST OR ELSE!!!");
+                let user = prompt("MAKE SURE TO VISIT THE FOOD ROOM FIRST!!!");
 
                 if (user == "1738") {
 
@@ -240,6 +361,10 @@ $("#ForestRightImg").click(function () {
                             $("#shelf").hide();
                             $("#burger").hide();
                             $("#bread").show();
+                            $("#ham").show();
+                            $("#cheese").show();
+                            $("#back").show();
+                            $("#bannana").show();
 
                             $("#bread").hover(
                               function () {
@@ -249,6 +374,114 @@ $("#ForestRightImg").click(function () {
                                 $("#Breadthought").stop(true, true).slideUp(300);
                               }
                             );
+
+                            $("#ham").hover(
+                              function () {
+                                $("#Hamthought").stop(true, true).slideDown(300);
+                              },
+                              function () {
+                                $("#Hamthought").stop(true, true).slideUp(300);
+                              }
+                            );
+
+                            $("#cheese").hover(
+                              function () {
+                                $("#Cheesethought").stop(true, true).slideDown(300);
+                              },
+                              function () {
+                                $("#Cheesethought").stop(true, true).slideUp(300);
+                              }
+                            );
+
+                            $("#bannana").hover(
+                              function () {
+                                $("#Bannanathought").stop(true, true).slideDown(300);
+                              },
+                              function () {
+                                $("#Bannanathought").stop(true, true).slideUp(300);
+                              }
+                            );
+
+                            $("#back").click(function () {
+                              $("body").css("background-image", 'url(FoodRoom.png');
+                              $("#bread").hide();
+                              $("#ham").hide();
+                              $("#cheese").hide();
+                              $("#back").hide();
+                              $("#bannana").hide();
+                              $("#FoodRoomDialog").show();
+                              $("#FoodRoomDialog").html("So did you find the price? Click on my portrait if you found out")
+                              $("#burger").show();
+                              $("#shelf").hide();
+                              $("#backing").show();
+
+                              $("#burger").click(function () {
+                                askPrice();
+                              });
+
+                              function askPrice() {
+
+                                let user = prompt("What is the total price of a Ham & Cheese Sandwhich?");
+
+                                if (user == "$63") {
+                                  $("#FoodRoomDialog").html("The code is 1738")
+                                }
+                                else {
+                                  $("#FoodRoomDialog").html("Nope, try again..")
+                                }
+                              }
+
+                              $("#backing").click(function () {
+                                $("body").css("background-image", 'url(CatRoom.png');
+                                $("#exit1").show();
+                                $("#FoodDoor1").show()
+                                $("#FoodRoomDialog").hide();
+                                $("#burger").hide();
+                                $("#backing").hide();
+
+                                $("#exit1").click(function () {
+                                  askEnd();
+                                });
+
+                                function askEnd() {
+
+                                  let user = prompt("What is the passcode?");
+
+                                  if (user == "1738") {
+                                    $("body").css("background-image", 'url(BlackScreen.avif');
+                                    $("#exit1").hide();
+                                    $("#FoodDoor1").hide();
+                                    $("#GoodEnding").show();
+                                    $("#GoodEnding").html("The door opens and your sight is temporarily blinded");
+
+                                    $("#GoodEnding").click(function () {
+                                      $("#GoodEnding").html("In pitch blackness you take a brave step and move foward..");
+
+                                      $("#GoodEnding").click(function () {
+                                        $("#GoodEnding").html("You Reached the Good Ending");
+                                        $("body").css("background-image", 'url(GoodEnding.png');
+                                      });
+                                    });
+                                  }
+                                  else {
+                                    $("body").css("background-image", 'url(BlackScreen.avif');
+                                    $("#FoodDoor1").hide();
+                                    $("#exit1").hide()
+                                    $("#BadEnding").show();
+                                    $("#BadEnding").html("The door opens and your sight is temporarily blinded");
+
+                                    $("#BadEnding").click(function () {
+                                      $("#BadEnding").html("In pitch blackness you take a brave step and move foward..");
+
+                                      $("#BadEnding").click(function () {
+                                        $("#BadEnding").html("You Reached the Bad Ending");
+                                        $("body").css("background-image", 'url(BadEnding.png');
+                                      });
+                                    });
+                                  }
+                                }
+                              });
+                            });
                           });
                         });
                       });
@@ -332,6 +565,10 @@ $("#RightImg").click(function () {
                         $("#shelf").hide();
                         $("#burger").hide();
                         $("#bread").show();
+                        $("#ham").show();
+                        $("#cheese").show();
+                        $("#back").show();
+                        $("#bannana").show();
 
                         $("#bread").hover(
                           function () {
@@ -341,6 +578,114 @@ $("#RightImg").click(function () {
                             $("#Breadthought").stop(true, true).slideUp(300);
                           }
                         );
+
+                        $("#ham").hover(
+                          function () {
+                            $("#Hamthought").stop(true, true).slideDown(300);
+                          },
+                          function () {
+                            $("#Hamthought").stop(true, true).slideUp(300);
+                          }
+                        );
+
+                        $("#cheese").hover(
+                          function () {
+                            $("#Cheesethought").stop(true, true).slideDown(300);
+                          },
+                          function () {
+                            $("#Cheesethought").stop(true, true).slideUp(300);
+                          }
+                        );
+
+                        $("#bannana").hover(
+                          function () {
+                            $("#Bannanathought").stop(true, true).slideDown(300);
+                          },
+                          function () {
+                            $("#Bannanathought").stop(true, true).slideUp(300);
+                          }
+                        );
+
+                        $("#back").click(function () {
+                          $("body").css("background-image", 'url(FoodRoom.png');
+                          $("#bread").hide();
+                          $("#ham").hide();
+                          $("#cheese").hide();
+                          $("#back").hide();
+                          $("#bannana").hide();
+                          $("#FoodRoomDialog").show();
+                          $("#FoodRoomDialog").html("So did you find the price? Click on my portrait if you found out")
+                          $("#burger").show();
+                          $("#shelf").hide();
+                          $("#backing").show();
+
+                          $("#burger").click(function () {
+                            askPrice();
+                          });
+
+                          function askPrice() {
+
+                            let user = prompt("What is the total price of a Ham & Cheese Sandwhich?");
+
+                            if (user == "$63") {
+                              $("#FoodRoomDialog").html("The code is 1738")
+                            }
+                            else {
+                              $("#FoodRoomDialog").html("Nope, try again..")
+                            }
+                          }
+
+                          $("#backing").click(function () {
+                            $("body").css("background-image", 'url(CatRoom.png');
+                            $("#exit1").show();
+                            $("#FoodDoor1").show()
+                            $("#FoodRoomDialog").hide();
+                            $("#burger").hide();
+                            $("#backing").hide();
+
+                            $("#exit1").click(function () {
+                              askEnd();
+                            });
+
+                            function askEnd() {
+
+                              let user = prompt("What is the passcode?");
+
+                              if (user == "1738") {
+                                $("body").css("background-image", 'url(BlackScreen.avif');
+                                $("#exit1").hide();
+                                $("#FoodDoor1").hide();
+                                $("#GoodEnding").show();
+                                $("#GoodEnding").html("The door opens and your sight is temporarily blinded");
+
+                                $("#GoodEnding").click(function () {
+                                  $("#GoodEnding").html("In pitch blackness you take a brave step and move foward..");
+
+                                  $("#GoodEnding").click(function () {
+                                    $("#GoodEnding").html("You Reached the Good Ending");
+                                    $("body").css("background-image", 'url(GoodEnding.png');
+                                  });
+                                });
+                              }
+                              else {
+                                $("body").css("background-image", 'url(BlackScreen.avif');
+                                $("#FoodDoor1").hide();
+                                $("#exit1").hide()
+                                $("#BadEnding").show();
+                                $("#BadEnding").html("The door opens and your sight is temporarily blinded");
+
+                                $("#BadEnding").click(function () {
+                                  $("#BadEnding").html("In pitch blackness you take a brave step and move foward..");
+
+                                  $("#BadEnding").click(function () {
+                                    $("#BadEnding").html("You Reached the Bad Ending");
+                                    $("body").css("background-image", 'url(BadEnding.png');
+                                  });
+                                });
+                              }
+                            }
+                          });
+                        });
                       });
                     });
                   });
@@ -387,6 +732,127 @@ $("#RightImg").click(function () {
                         $("#shelf").hide();
                         $("#coffee").hide();
                         $("#bread").show();
+                        $("#ham").show();
+                        $("#cheese").show();
+                        $("#back").show();
+                        $("#bannana").show();
+
+                        $("#bread").hover(
+                          function () {
+                            $("#Breadthought").stop(true, true).slideDown(300);
+                          },
+                          function () {
+                            $("#Breadthought").stop(true, true).slideUp(300);
+                          }
+                        );
+
+                        $("#ham").hover(
+                          function () {
+                            $("#Hamthought").stop(true, true).slideDown(300);
+                          },
+                          function () {
+                            $("#Hamthought").stop(true, true).slideUp(300);
+                          }
+                        );
+
+                        $("#cheese").hover(
+                          function () {
+                            $("#Cheesethought").stop(true, true).slideDown(300);
+                          },
+                          function () {
+                            $("#Cheesethought").stop(true, true).slideUp(300);
+                          }
+                        );
+
+                        $("#bannana").hover(
+                          function () {
+                            $("#Bannanathought").stop(true, true).slideDown(300);
+                          },
+                          function () {
+                            $("#Bannanathought").stop(true, true).slideUp(300);
+                          }
+                        );
+
+                        $("#back").click(function () {
+                          $("body").css("background-image", 'url(FoodRoom.png');
+                          $("#bread").hide();
+                          $("#ham").hide();
+                          $("#cheese").hide();
+                          $("#bannana").hide();
+                          $("#back").hide();
+                          $("#FoodRoomDialog").show();
+                          $("#FoodRoomDialog").html("So did you find the price? Click on my portrait if you found out")
+                          $("#coffee").show();
+                          $("#shelf").hide();
+                          $("#backing").show();
+
+                          $("#burger").click(function () {
+                            askPrice();
+                          });
+
+                          function askPrice() {
+
+                            let user = prompt("What is the total price of a Ham & Cheese Sandwhich?");
+
+                            if (user == "$63") {
+                              $("#FoodRoomDialog").html("The code is 1738")
+                            }
+                            else {
+                              $("#FoodRoomDialog").html("Nope, try again..")
+                            }
+                          }
+
+                          $("#backing").click(function () {
+                            $("body").css("background-image", 'url(CatRoom.png');
+                            $("#exit1").show();
+                            $("#FoodDoor1").show()
+                            $("#FoodRoomDialog").hide();
+                            $("#burger").hide();
+                            $("#backing").hide();
+
+                            $("#exit1").click(function () {
+                              askEnd();
+                            });
+
+                            function askEnd() {
+
+                              let user = prompt("What is the passcode?");
+
+                              if (user == "1738") {
+                                $("body").css("background-image", 'url(BlackScreen.avif');
+                                $("#exit1").hide();
+                                $("#FoodDoor1").hide();
+                                $("#GoodEnding").show();
+                                $("#GoodEnding").html("The door opens and your sight is temporarily blinded");
+
+                                $("#GoodEnding").click(function () {
+                                  $("#GoodEnding").html("In pitch blackness you take a brave step and move foward..");
+
+                                  $("#GoodEnding").click(function () {
+                                    $("#GoodEnding").html("You Reached the Good Ending");
+                                    $("body").css("background-image", 'url(GoodEnding.png');
+                                  });
+                                });
+                              }
+                              else {
+                                $("body").css("background-image", 'url(BlackScreen.avif');
+                                $("#FoodDoor1").hide();
+                                $("#exit1").hide()
+                                $("#BadEnding").show();
+                                $("#BadEnding").html("The door opens and your sight is temporarily blinded");
+
+                                $("#BadEnding").click(function () {
+                                  $("#BadEnding").html("In pitch blackness you take a brave step and move foward..");
+
+                                  $("#BadEnding").click(function () {
+                                    $("#BadEnding").html("You Reached the Bad Ending");
+                                    $("body").css("background-image", 'url(BadEnding.png');
+                                  });
+                                });
+                              }
+                            }
+                          });
+                        });
                       });
                     });
                   });
@@ -419,12 +885,12 @@ $("#RightImg").click(function () {
             $(".FoodRoomsDoor").show();
 
             $("#exit").click(function () {
-              ask();
+              askCode();
             });
 
-            function ask() {
+            function askCode() {
 
-              let user = prompt("What is the passcode? MAKE SURE TO VISIT THE FOOD ROOM FIRST OR ELSE!!!");
+              let user = prompt("MAKE SURE TO VISIT THE FOOD ROOM FIRST!!!");
 
               if (user == "1738") {
 
@@ -461,6 +927,10 @@ $("#RightImg").click(function () {
                           $("#shelf").hide();
                           $("#burger").hide();
                           $("#bread").show();
+                          $("#ham").show();
+                          $("#cheese").show();
+                          $("#bannana").show();
+                          $("#back").show();
 
                           $("#bread").hover(
                             function () {
@@ -470,6 +940,114 @@ $("#RightImg").click(function () {
                               $("#Breadthought").stop(true, true).slideUp(300);
                             }
                           );
+
+                          $("#ham").hover(
+                            function () {
+                              $("#Hamthought").stop(true, true).slideDown(300);
+                            },
+                            function () {
+                              $("#Hamthought").stop(true, true).slideUp(300);
+                            }
+                          );
+
+                          $("#cheese").hover(
+                            function () {
+                              $("#Cheesethought").stop(true, true).slideDown(300);
+                            },
+                            function () {
+                              $("#Cheesethought").stop(true, true).slideUp(300);
+                            }
+                          );
+
+                          $("#bannana").hover(
+                            function () {
+                              $("#Bannanathought").stop(true, true).slideDown(300);
+                            },
+                            function () {
+                              $("#Bannanathought").stop(true, true).slideUp(300);
+                            }
+                          );
+
+                          $("#back").click(function () {
+                            $("body").css("background-image", 'url(FoodRoom.png');
+                            $("#bread").hide();
+                            $("#ham").hide();
+                            $("#cheese").hide();
+                            $("#back").hide();
+                            $("#bannana").hide();
+                            $("#FoodRoomDialog").show();
+                            $("#FoodRoomDialog").html("So did you find the price? Click on my portrait if you found out")
+                            $("#burger").show();
+                            $("#shelf").hide();
+                            $("#backing").show();
+
+                            $("#burger").click(function () {
+                              askPrice();
+                            });
+
+                            function askPrice() {
+
+                              let user = prompt("What is the total price of a Ham & Cheese Sandwhich?");
+
+                              if (user == "$63") {
+                                $("#FoodRoomDialog").html("The code is 1738")
+                              }
+                              else {
+                                $("#FoodRoomDialog").html("Nope, try again..")
+                              }
+                            }
+
+                            $("#backing").click(function () {
+                              $("body").css("background-image", 'url(CatRoom.png');
+                              $("#exit1").show();
+                              $("#FoodDoor1").show()
+                              $("#FoodRoomDialog").hide();
+                              $("#burger").hide();
+                              $("#backing").hide();
+
+                              $("#exit1").click(function () {
+                                askEnd();
+                              });
+
+                              function askEnd() {
+
+                                let user = prompt("What is the passcode?");
+
+                                if (user == "1738") {
+                                  $("body").css("background-image", 'url(BlackScreen.avif');
+                                  $("#exit1").hide();
+                                  $("#FoodDoor1").hide();
+                                  $("#GoodEnding").show();
+                                  $("#GoodEnding").html("The door opens and your sight is temporarily blinded");
+
+                                  $("#GoodEnding").click(function () {
+                                    $("#GoodEnding").html("In pitch blackness you take a brave step and move foward..");
+
+                                    $("#GoodEnding").click(function () {
+                                      $("#GoodEnding").html("You Reached the Good Ending");
+                                      $("body").css("background-image", 'url(GoodEnding.png');
+                                    });
+                                  });
+                                }
+                                else {
+                                  $("body").css("background-image", 'url(BlackScreen.avif');
+                                  $("#FoodDoor1").hide();
+                                  $("#exit1").hide()
+                                  $("#BadEnding").show();
+                                  $("#BadEnding").html("The door opens and your sight is temporarily blinded");
+
+                                  $("#BadEnding").click(function () {
+                                    $("#BadEnding").html("In pitch blackness you take a brave step and move foward..");
+
+                                    $("#BadEnding").click(function () {
+                                      $("#BadEnding").html("You Reached the Bad Ending");
+                                      $("body").css("background-image", 'url(BadEnding.png');
+                                    });
+                                  });
+                                }
+                              }
+                            });
+                          });
                         });
                       });
                     });
@@ -483,12 +1061,3 @@ $("#RightImg").click(function () {
     });
   });
 });
-
-// River Up Path
-
-// Down the River more
-
-
-// Uphill Scene
-
-// MidPage End
