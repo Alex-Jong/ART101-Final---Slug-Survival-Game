@@ -49,13 +49,10 @@ $("#TvScreen").click(function () {
 
 // MidPage Start
 $("#continue").click(function () {
-  // MidPage Background Replacement
   $("body").css("background-image", 'url(MidSection1.png');
   $(".MidPage").show();
-  // Hide the previous Instruction Screen
   $("#continue").hide();
   $(".CoverScreen").hide();
-  // Instruction Screen End
 
   // MidPage1 Clickers
 
@@ -80,6 +77,7 @@ $("#BarrelDoor").click(function () {
   askEnter();
 });
 
+// Enter Backrooms Enterance
 function askEnter() {
 
   let user = prompt("Are you sure you want to enter? [Y/N]");
@@ -100,6 +98,7 @@ function askEnter() {
         $("#BackroomsDialog").hide();
         $("#CattyButton").show();
 
+        // Walk to Cat Room
         $("#CattyButton").click(function () {
           $("body").css("background-image", 'url(CatRoom.png');
           $("#CattyButton").hide();
@@ -121,6 +120,7 @@ function askEnter() {
             }
           }
 
+          // Walk to Food Room
           $("#FoodDoor").click(function () {
             $("body").css("background-image", 'url(FoodRoom.png');
             $(".FoodRoomsDoor").hide();
@@ -143,6 +143,7 @@ function askEnter() {
                       $("#FoodRoomDialog").hide();
                       $("#shelf").show();
 
+                      // Look at shelf
                       $("#shelf").click(function () {
                         $("body").css("background-image", 'url(shelf.jpg');
                         $("#shelf").hide();
@@ -189,6 +190,7 @@ function askEnter() {
                           }
                         );
 
+                        // Go back to Food Room
                         $("#back").click(function () {
                           $("body").css("background-image", 'url(FoodRoom.png');
                           $("#bread").hide();
@@ -218,6 +220,7 @@ function askEnter() {
                             }
                           }
 
+                          // Go Back to Cat Room
                           $("#backing").click(function () {
                             $("body").css("background-image", 'url(CatRoom.png');
                             $("#exit1").show();
@@ -226,6 +229,7 @@ function askEnter() {
                             $("#burger").hide();
                             $("#backing").hide();
 
+                            // Ending
                             $("#exit1").click(function () {
                               askEnd();
                             });
@@ -303,8 +307,9 @@ $("#ForestRightImg").click(function () {
 
         $("#catAnswer1").click(function () {
           $("#CatPortrait").html("<img src='CatAngry.png'>");
-          $("#catAnswer1").html("Yes, yes you did and now I must turn you into a cat");
+          $("#catAnswer1").html("Yes, yes you did and now I must destroy you");
 
+          // Transition Between Cat's Cradle and Cat Room
           $("#catAnswer1").click(function () {
             $("#Slug").hide();
             $("#catTitle").hide();
@@ -312,6 +317,7 @@ $("#ForestRightImg").click(function () {
             $("body").css("background-image", 'url(BlackScreen.avif');
             $("#catAnswer1").html("You feel a sudden surge of gravity, like up is down and down is up, you lose your sense of direction and feel like you are falling endlessly...");
 
+            // Cat Room Scene
             $("#catAnswer1").click(function () {
               $("body").css("background-image", 'url(CatRoom.png');
               $("#catAnswer").hide();
@@ -334,6 +340,7 @@ $("#ForestRightImg").click(function () {
                 }
               }
 
+              // Walk to Food Room
               $("#FoodDoor").click(function () {
                 $("body").css("background-image", 'url(FoodRoom.png');
                 $(".FoodRoomsDoor").hide();
@@ -356,6 +363,7 @@ $("#ForestRightImg").click(function () {
                           $("#FoodRoomDialog").hide();
                           $("#shelf").show();
 
+                          // Look at shelf
                           $("#shelf").click(function () {
                             $("body").css("background-image", 'url(shelf.jpg');
                             $("#shelf").hide();
@@ -402,6 +410,7 @@ $("#ForestRightImg").click(function () {
                               }
                             );
 
+                            // Back to Food Room
                             $("#back").click(function () {
                               $("body").css("background-image", 'url(FoodRoom.png');
                               $("#bread").hide();
@@ -431,6 +440,7 @@ $("#ForestRightImg").click(function () {
                                 }
                               }
 
+                              // Walk back to Cat Room
                               $("#backing").click(function () {
                                 $("body").css("background-image", 'url(CatRoom.png');
                                 $("#exit1").show();
@@ -439,6 +449,7 @@ $("#ForestRightImg").click(function () {
                                 $("#burger").hide();
                                 $("#backing").hide();
 
+                                // Ending
                                 $("#exit1").click(function () {
                                   askEnd();
                                 });
@@ -518,12 +529,13 @@ $("#RightImg").click(function () {
     $(".downRiver").show();
     $(".lake").hide()
 
+    // Merill Market Clickers
     $("#RiverUp").click(function () {
       $("body").css("background-image", 'url(MerillMarket.png');
       $(".downRiver").hide();
       $(".merill").show();
 
-      // Merill Clickers
+      // Enter Bannana Joes
       $("#explore").click(function () {
         $("body").css("background-image", 'url(BannanaJoes.png');
         $("#bannanajoesDialog").show();
@@ -531,10 +543,12 @@ $("#RightImg").click(function () {
         $("#bannanajoesDialog").html("You look at aw at the amazing store, deciding you are a bit hungry you enter the restaurant...");
       });
 
+      // Transition between Bannana Joes and Food Room
       $("#bannanajoesDialog").click(function () {
         $("body").css("background-image", 'url(BlackScreen.avif');
         $("#bannanajoesDialog").html("You enter the restaurant only for your vision to go blank for a bit...")
 
+        // Enter Food Room
         $("#bannanajoesDialog").click(function () {
           $("body").css("background-image", 'url(FoodRoom.png');
           $("#bannanajoesDialog").html("You regain your sight and look around the room...")
@@ -560,6 +574,7 @@ $("#RightImg").click(function () {
                       $("#FoodRoomDialog").hide();
                       $("#shelf").show();
 
+                      // Look at shelf
                       $("#shelf").click(function () {
                         $("body").css("background-image", 'url(shelf.jpg');
                         $("#shelf").hide();
@@ -606,6 +621,7 @@ $("#RightImg").click(function () {
                           }
                         );
 
+                        // Go back to Food Room
                         $("#back").click(function () {
                           $("body").css("background-image", 'url(FoodRoom.png');
                           $("#bread").hide();
@@ -635,6 +651,7 @@ $("#RightImg").click(function () {
                             }
                           }
 
+                          // Walk back to Cat Room
                           $("#backing").click(function () {
                             $("body").css("background-image", 'url(CatRoom.png');
                             $("#exit1").show();
@@ -643,6 +660,7 @@ $("#RightImg").click(function () {
                             $("#burger").hide();
                             $("#backing").hide();
 
+                            // Ending
                             $("#exit1").click(function () {
                               askEnd();
                             });
@@ -696,12 +714,14 @@ $("#RightImg").click(function () {
         });
       });
 
+      // Transition between Merill Market and Food Room
       $("#enter").click(function () {
         $("body").css("background-image", 'url(BlackScreen.avif');
         $(".merill").hide();
         $("#Merilldialog").show();
         $("#Merilldialog").html("You enter the store only for your vision to go blank for a bit...")
 
+        // Enter Food Room
         $("#Merilldialog").click(function () {
           $("body").css("background-image", 'url(FoodRoom.png');
           $("#Merilldialog").html("Your sight comes back to you as you behold a sight")
@@ -727,6 +747,7 @@ $("#RightImg").click(function () {
                       $("#FoodRoomDialog").hide();
                       $("#shelf").show();
 
+                      // Look at shelf
                       $("#shelf").click(function () {
                         $("body").css("background-image", 'url(shelf.jpg');
                         $("#shelf").hide();
@@ -773,6 +794,7 @@ $("#RightImg").click(function () {
                           }
                         );
 
+                        // Go back to Food Room
                         $("#back").click(function () {
                           $("body").css("background-image", 'url(FoodRoom.png');
                           $("#bread").hide();
@@ -802,6 +824,7 @@ $("#RightImg").click(function () {
                             }
                           }
 
+                          // Walk back to Cat Room
                           $("#backing").click(function () {
                             $("body").css("background-image", 'url(CatRoom.png');
                             $("#exit1").show();
@@ -810,6 +833,7 @@ $("#RightImg").click(function () {
                             $("#burger").hide();
                             $("#backing").hide();
 
+                            // Ending
                             $("#exit1").click(function () {
                               askEnd();
                             });
@@ -864,12 +888,14 @@ $("#RightImg").click(function () {
       });
     });
 
+    // Continue down the river scene
     $("#RiverContinue").click(function () {
       $("body").css("background-image", 'url(ContinueDownRiver.png');
       $(".downRiver").hide();
       $("#RiverFalldialog").show();
       $("#RiverFalldialog").html("You continue down the river only to slip and fall down the waterfall.. everything fades to black");
 
+      // Transition from river to Pool Room
       $("#RiverFalldialog").click(function () {
         $("body").css("background-image", 'url(BlackScreen.avif');
         $("#RiverFalldialog").html("As you are out you start to gradually wake up...");
@@ -879,6 +905,7 @@ $("#RightImg").click(function () {
           $("#RiverFalldialog").hide();
           $("#PoolButton").show();
 
+          // Dive into water to Cat Room
           $("#PoolButton").click(function () {
             $("body").css("background-image", 'url(CatRoom.png');
             $("#PoolButton").hide();
@@ -900,6 +927,7 @@ $("#RightImg").click(function () {
               }
             }
 
+            // Walk to Food Room
             $("#FoodDoor").click(function () {
               $("body").css("background-image", 'url(FoodRoom.png');
               $(".FoodRoomsDoor").hide();
@@ -922,6 +950,7 @@ $("#RightImg").click(function () {
                         $("#FoodRoomDialog").hide();
                         $("#shelf").show();
 
+                        // Look at shelf
                         $("#shelf").click(function () {
                           $("body").css("background-image", 'url(shelf.jpg');
                           $("#shelf").hide();
@@ -968,6 +997,7 @@ $("#RightImg").click(function () {
                             }
                           );
 
+                          // Go back to Food Room
                           $("#back").click(function () {
                             $("body").css("background-image", 'url(FoodRoom.png');
                             $("#bread").hide();
@@ -997,6 +1027,7 @@ $("#RightImg").click(function () {
                               }
                             }
 
+                            // Walk back to Cat Room
                             $("#backing").click(function () {
                               $("body").css("background-image", 'url(CatRoom.png');
                               $("#exit1").show();
@@ -1005,6 +1036,7 @@ $("#RightImg").click(function () {
                               $("#burger").hide();
                               $("#backing").hide();
 
+                              // Ending
                               $("#exit1").click(function () {
                                 askEnd();
                               });
