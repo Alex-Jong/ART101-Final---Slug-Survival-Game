@@ -565,6 +565,34 @@ body {background-color: black; background-image: url(IntroBackground.png); backg
    width: 200px 
 }
 
+#Burgerthought {
+  display: none;
+  position: absolute;
+  left: 740px;
+  top: 180px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 12px;
+  width: 180px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+#Coffeethought {
+  display: none;
+  position: absolute;
+  left: 740px;
+  top: 180px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 12px;
+  width: 180px;
+  z-index: 3;
+  pointer-events: none;
+}
+
 #GoodEnding {
   position: relative; 
   background-color: black; 

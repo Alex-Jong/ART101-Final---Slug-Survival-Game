@@ -28,6 +28,8 @@ $("#GoodEnding").hide();
 $("#BadEnding").hide();
 $("#exit1").hide()
 $("#FoodDoor1").hide()
+$("#Coffeethought").hide();
+$("#Burgerthought").hide();
 
 // IntroPage Start
 $("#TvScreen").hover(
@@ -197,12 +199,20 @@ function askEnter() {
                           $("#ham").hide();
                           $("#cheese").hide();
                           $("#back").hide();
-                          $("#FoodRoomDialog").show();
                           $("#bannana").hide();
-                          $("#FoodRoomDialog").html("So did you find the price? Click on my portrait if you found out")
+                          $("#FoodRoomDialog").hide();
                           $("#burger").show();
                           $("#shelf").hide();
                           $("#backing").show();
+
+                          $("#burger").hover(
+                            function () {
+                              $("#Burgerthought").stop(true, true).slideDown(300);
+                            },
+                            function () {
+                              $("#Burgerthought").stop(true, true).slideUp(300);
+                            }
+                          );
 
                           $("#burger").click(function () {
                             askPrice();
@@ -213,10 +223,10 @@ function askEnter() {
                             let user = prompt("What is the total price of a Ham & Cheese Sandwhich?");
 
                             if (user == "$63") {
-                              $("#FoodRoomDialog").html("The code is 1738")
+                              $("#Burgerthought").html("The code is 1738")
                             }
                             else {
-                              $("#FoodRoomDialog").html("Nope, try again..")
+                              $("#Burgerthought").html("Nope, try again..")
                             }
                           }
 
@@ -418,11 +428,19 @@ $("#ForestRightImg").click(function () {
                               $("#cheese").hide();
                               $("#back").hide();
                               $("#bannana").hide();
-                              $("#FoodRoomDialog").show();
-                              $("#FoodRoomDialog").html("So did you find the price? Click on my portrait if you found out")
+                              $("#FoodRoomDialog").hide();
                               $("#burger").show();
                               $("#shelf").hide();
                               $("#backing").show();
+
+                              $("#burger").hover(
+                                function () {
+                                  $("#Burgerthought").stop(true, true).slideDown(300);
+                                },
+                                function () {
+                                  $("#Burgerthought").stop(true, true).slideUp(300);
+                                }
+                              );
 
                               $("#burger").click(function () {
                                 askPrice();
@@ -433,10 +451,10 @@ $("#ForestRightImg").click(function () {
                                 let user = prompt("What is the total price of a Ham & Cheese Sandwhich?");
 
                                 if (user == "$63") {
-                                  $("#FoodRoomDialog").html("The code is 1738")
+                                  $("#Burgerthought").html("The code is 1738")
                                 }
                                 else {
-                                  $("#FoodRoomDialog").html("Nope, try again..")
+                                  $("#Burgerthought").html("Nope, try again..")
                                 }
                               }
 
@@ -629,11 +647,19 @@ $("#RightImg").click(function () {
                           $("#cheese").hide();
                           $("#back").hide();
                           $("#bannana").hide();
-                          $("#FoodRoomDialog").show();
-                          $("#FoodRoomDialog").html("So did you find the price? Click on my portrait if you found out")
+                          $("#FoodRoomDialog").hide();
                           $("#burger").show();
                           $("#shelf").hide();
                           $("#backing").show();
+
+                          $("#burger").hover(
+                            function () {
+                              $("#Burgerthought").stop(true, true).slideDown(300);
+                            },
+                            function () {
+                              $("#Burgerthought").stop(true, true).slideUp(300);
+                            }
+                          );
 
                           $("#burger").click(function () {
                             askPrice();
@@ -644,10 +670,10 @@ $("#RightImg").click(function () {
                             let user = prompt("What is the total price of a Ham & Cheese Sandwhich?");
 
                             if (user == "$63") {
-                              $("#FoodRoomDialog").html("The code is 1738")
+                              $("#Burgerthought").html("The code is 1738")
                             }
                             else {
-                              $("#FoodRoomDialog").html("Nope, try again..")
+                              $("#Burgerthought").html("Nope, try again..")
                             }
                           }
 
@@ -800,13 +826,21 @@ $("#RightImg").click(function () {
                           $("#bread").hide();
                           $("#ham").hide();
                           $("#cheese").hide();
-                          $("#bannana").hide();
                           $("#back").hide();
-                          $("#FoodRoomDialog").show();
-                          $("#FoodRoomDialog").html("So did you find the price? Click on my portrait if you found out")
+                          $("#bannana").hide();
+                          $("#FoodRoomDialog").hide();
                           $("#coffee").show();
                           $("#shelf").hide();
                           $("#backing").show();
+
+                          $("#coffee").hover(
+                            function () {
+                              $("#Coffeethought").stop(true, true).slideDown(300);
+                            },
+                            function () {
+                              $("#Coffeethought").stop(true, true).slideUp(300);
+                            }
+                          );
 
                           $("#coffee").click(function () {
                             askPrice();
@@ -817,10 +851,10 @@ $("#RightImg").click(function () {
                             let user = prompt("What is the total price of a Ham & Cheese Sandwhich?");
 
                             if (user == "$63") {
-                              $("#FoodRoomDialog").html("The code is 1738")
+                              $("#Coffeethought").html("The code is 1738")
                             }
                             else {
-                              $("#FoodRoomDialog").html("Nope, try again..")
+                              $("#Coffeethought").html("Nope, try again..")
                             }
                           }
 
@@ -1005,11 +1039,19 @@ $("#RightImg").click(function () {
                             $("#cheese").hide();
                             $("#back").hide();
                             $("#bannana").hide();
-                            $("#FoodRoomDialog").show();
-                            $("#FoodRoomDialog").html("So did you find the price? Click on my portrait if you found out")
+                            $("#FoodRoomDialog").hide();
                             $("#burger").show();
                             $("#shelf").hide();
                             $("#backing").show();
+
+                            $("#burger").hover(
+                              function () {
+                                $("#Burgerthought").stop(true, true).slideDown(300);
+                              },
+                              function () {
+                                $("#Burgerthought").stop(true, true).slideUp(300);
+                              }
+                            );
 
                             $("#burger").click(function () {
                               askPrice();
@@ -1020,10 +1062,10 @@ $("#RightImg").click(function () {
                               let user = prompt("What is the total price of a Ham & Cheese Sandwhich?");
 
                               if (user == "$63") {
-                                $("#FoodRoomDialog").html("The code is 1738")
+                                $("#Burgerthought").html("The code is 1738")
                               }
                               else {
-                                $("#FoodRoomDialog").html("Nope, try again..")
+                                $("#Burgerthought").html("Nope, try again..")
                               }
                             }
 
